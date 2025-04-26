@@ -1,0 +1,49 @@
+<svg width="600" height="180" viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#000000"></rect>
+
+  <!-- Gridlines for sci-fi effect -->
+  <path d="M0 60 H600 M0 120 H600 M100 0 V180 M200 0 V180 M300 0 V180" stroke="#1f2a38" stroke-width="0.5" opacity="0.3"></path>
+
+  <!-- Orbit Rings -->
+  <circle cx="120" cy="90" r="45" stroke="#00f0ff" stroke-width="1" fill="none" opacity="0.15"></circle>
+  <circle cx="120" cy="90" r="55" stroke="#00f0ff" stroke-width="0.8" fill="none" opacity="0.1"></circle>
+
+  <!-- Full Futuristic Moon -->
+  <circle cx="120" cy="90" r="35" fill="url(#moonGradient)"></circle>
+  <!-- Digital Craters -->
+  <circle cx="110" cy="80" r="4" fill="#99a" opacity="0.35"></circle>
+  <rect x="122" y="97" width="4" height="4" fill="#ccc" rx="1" opacity="0.3"></rect>
+  <circle cx="130" cy="75" r="2" fill="#aaa" opacity="0.25"></circle>
+
+  <!-- Headphone Halo -->
+  <path d="M80 75 Q120 20 160 75" stroke="#00f0ff" stroke-width="6" fill="none"></path>
+
+  <!-- Futuristic Headphone Pads -->
+  <rect x="74" y="75" width="7" height="24" rx="3" fill="#00f0ff"></rect>
+  <rect x="159" y="75" width="7" height="24" rx="3" fill="#00f0ff"></rect>
+
+  <!-- Audio Pulse Lines (from right ear) -->
+  <path d="M170 90 q15 -20 30 0 q-15 20 -30 0" stroke="#00f0ff" stroke-width="2" fill="none" opacity="0.6"></path>
+  <path d="M175 90 q10 -15 20 0 q-10 15 -20 0" stroke="#00f0ff" stroke-width="1.2" fill="none" opacity="0.4"></path>
+
+  <!-- "LUNAR" Text (white) -->
+  <text x="220" y="105" font-family="Orbitron, sans-serif" font-size="56" fill="white" letter-spacing="8">
+    LUNAR
+  </text>
+
+  <!-- Pulse Dot on A -->
+  <circle cx="465" cy="85" r="4" fill="#00f0ff">
+    <animate attributeName="r" values="3;6;3" dur="1.5s" repeatCount="indefinite"></animate>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <!-- Neon moon gradient -->
+  <defs>
+    <radialGradient id="moonGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="60%" stop-color="#b0e0ff"></stop>
+      <stop offset="100%" stop-color="#5e8cff"></stop>
+    </radialGradient>
+  </defs>
+</svg>
